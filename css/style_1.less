@@ -1,0 +1,354 @@
+@white: #fff;
+@pink: #fb6470;
+@black: #3e3e3e;
+@gray: #cccccc;
+@blue: #01b9c3;
+@darkblue: #0093b5;
+@verydarkblue: #1e2e3e;
+@brown: #3f3d3e;
+@darkgray: #353541;
+@sapphirine: #6176ab;
+@lightgray: #d9d8d8;
+@bordercolor: #71717a;
+@bordericon: #a3a3a3;
+@verygray: #252532;
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+}
+.relmed {
+	font-family: 'Raleway';
+	font-weight: 600;
+}
+.head {
+	padding: 120px 0;
+	background: url(../img/header-bg.jpg);
+	background-size: 100% 100%;
+	text-align: center;
+	color: @white;
+	height: 435px;
+	position: relative;
+	.menu {
+		text-align: left;
+		width: 100%;
+		height: 65px;
+		background-color: @darkgray;
+		position: fixed;
+		z-index: 999;
+		position: absolute;
+		top: -65px;
+		span {
+			top: 0;
+			left: 45px;
+			position: absolute;
+			color: @pink;
+			font-size: 36px;
+			text-shadow: 2px 2px 25px #000;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		ul {
+		padding: 0;	
+		margin-left: 70px;	
+			li {
+				padding-left: 30px;
+				list-style: none;
+				float: left;
+				a {
+				.relmed;
+				font-size: 22px;
+				line-height: 62px;
+				color: @white;
+				&:hover {
+					color: @pink;
+					transition: all .2s ease;
+					cursor: pointer;
+					text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	&-nav-bar {
+		position: absolute;
+		width: 55px;
+		height: 30px;
+		display: block;
+		top: 0;
+		margin-top: 35px;
+		margin-left: 35px;
+		.line {
+			height: 4px;
+			width: 55px;
+			background: @pink;
+			display: block;
+			position: absolute;
+			&:before, &:after {
+				content: '';
+				background: @pink;
+				height: 4px;
+				width: 55px;
+				position: absolute;
+				left: 0;
+			}
+			&:before {
+				-webkit-transform: translateY(12px);
+				-ms-transform: translateY(12px);
+				-o-transform: translateY(12px);
+				transform: translateY(12px);
+			}
+			&:after {
+				-webkit-transform: translateY(24px);
+				-ms-transform: translateY(24px);
+				-o-transform: translateY(24px);
+				transform: translateY(24px);
+			}
+		}
+	}
+	h1 {
+		.relmed;
+	}
+	p {
+		margin: 25px 0 55px 0;
+		font-family: 'Raleway';
+	}
+	button {
+		background: @pink;
+		border: none;
+		outline: none;
+		height: 50px;
+		width: 170px;
+		-webkit-border-radius: 5px;
+		 -moz-border-radius: 5px;
+		 -ms-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 border-radius: 5px; 
+		 a {
+		 	font-size: 22px;
+		 	.relmed;
+			line-height: 37px;
+			color: @white;
+			display: inline-block;
+			width: 100%;
+			&:hover {
+				text-decoration: none;
+			}
+		 }
+	}
+}
+#portfolio {
+	padding: 75px 0;
+	h2 {
+		font-size: 32px;
+		.relmed;
+		color: @black;
+	}
+	.underline {
+		width: 75px;
+		height: 2px;
+		background: @pink;
+		margin: 20px 0;
+	}
+	.list-inline {
+		margin-left: 0;
+	}
+	.main-nav {
+		border-bottom: 2px solid @gray;
+		line-height: 50px;
+		.relmed;
+		font-size: 18px;
+		margin-bottom: 70px;
+		li {
+			padding: 0;
+			width: 24%;
+			text-align: center;
+			a {
+				color: inherit;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		li:nth-child(1) {
+			a {
+				border-bottom: 2px solid @pink;
+				display: inline-block;
+				line-height: 50px;
+				padding-left: 15px;
+				width: 110px;
+			}
+			text-align: left;
+		}
+		li:nth-child(4) {
+			text-align: right;
+		}
+	}
+	.jobs {
+		color: @white;
+		img {
+			width: 100%;
+		}
+		h4 {
+			.relmed;
+			color: @white;
+			font-size: 22px;
+			line-height: 50px;
+		}
+		p {
+			font-size: 16px;
+			.relmed;
+		}
+		a {
+			.relmed;
+			font-size: 14px;
+			color: inherit;
+			line-height: 50px;
+			border-bottom: 1px solid @lightgray;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.job {
+			margin-bottom: 25px;
+			&-1 {
+				background-color: @blue;
+				padding: 0 15px;
+				height: 130px;
+			}
+			&-2 {
+				background-color: @verydarkblue;
+				padding: 0 15px;
+				height: 130px;
+			}
+			&-3 {
+				background-color: @brown;
+				padding: 0 15px;
+				height: 130px;
+			}
+			&-4 {
+				background-color: @darkblue;
+				padding: 0 15px;
+				height: 130px;
+			}
+			&-5 {
+				background-color: @darkgray;
+				padding: 0 15px;
+				height: 130px;
+			}
+			&-6 {
+				background-color: @sapphirine;
+				padding: 0 15px;
+				height: 130px;
+			}
+		}
+	}
+}
+#message {
+	padding-bottom: 70px;
+	.form {
+		h4 {
+			.relmed;
+			font-size: 22px;
+			color: @black;
+			line-height: 50px;
+			margin-bottom: 10px;
+		}
+		input, textarea {
+			width: 100%;
+			border: 1px solid @bordercolor;
+			margin-bottom: 20px;
+			line-height: 35px;
+			.relmed;
+			outline: none;
+			resize: none;
+			padding-left: 10px;
+		}
+		button {
+			float: right;
+			background: @pink;
+			color: @white;
+			.relmed;
+			font-size: 16px;
+			border: none;
+			line-height: 35px;
+			width: 95px;
+			outline: none;
+		}
+	}
+	.delimiter {
+		background-color: @gray;
+		width: 1px;
+		height: 230px;
+		float: right;
+		margin-right: 15px;
+		margin-top: 35px;
+	}
+	.about-me {
+		h5 {
+				.relmed;
+				line-height: 35px;
+			}
+			address {
+				.relmed;
+				line-height: 35px;
+				margin-bottom: 30px;
+			}
+		.location {
+			margin-top: 15px;
+			&:before {
+				content: '';
+				width: 32px;
+				height: 32px;
+				background: url(../img/house.png);
+				position: absolute;
+				margin-top: 17px;
+				margin-left: -70px;
+			}
+		}
+		.email {
+			&:before {
+				content: '';
+				width: 32px;
+				height: 32px;
+				background: url(../img/email.png);
+				position: absolute;
+				margin-top: 17px;
+				margin-left: -70px;
+			}
+		}
+		.phone {
+			&:before {
+				content: '';
+				width: 32px;
+				height: 32px;
+				background: url(../img/phone.png);
+				position: absolute;
+				margin-top: 17px;
+				margin-left: -70px;
+			}
+		}
+	}
+}
+
+#footer {
+	padding: 40px 0;
+	text-align: center;
+	img:nth-child(2) {
+		border-right: 1px solid @bordericon;
+		border-left: 1px solid @bordericon;
+		margin-bottom: 16px;
+	}
+	img:nth-child(1) {
+		padding-right: 13px;
+		margin-bottom: 16px;
+	}
+	img:nth-child(3) {
+		padding-left: 13px;
+		margin-bottom: 16px;
+	}
+	.footer {
+		font-size: 12px;
+		.relmed;
+		color: @black;
+	}
+}
