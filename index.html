@@ -46,7 +46,7 @@
         <div class="col-lg-offset-5 col-lg-6 head-main">
           <h1>Al Rayhan</h1>
           <p>#UI/UX Expert   |   #Graphic Designer</p>
-          <button class="button button--ujarak button--border-medium button--round-s button--text-thick"><a href="#">Here Me!</a></button>
+          <button data-toggle="modal" data-target="#modal-1" class="button button--ujarak button--border-medium button--round-s button--text-thick">Here Me!</button>
         </div>
       </div>
     </div>
@@ -256,6 +256,26 @@
       </div>
     </div>
   </footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Form</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<input type="text" placeholder="Name*">
+	      	<input type="email" placeholder="Email*">
+	      	<input type="phone" placeholder="Phone*">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-success">Send</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

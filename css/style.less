@@ -134,17 +134,10 @@ h1, h2, h3, h4, h5, h6 {
 		margin: auto;
 		z-index: 1;
 		position: relative;
-		 a {
-		 	font-size: 22px;
-		 	.relmed;
-			line-height: 37px;
-			color: @white;
-			display: inline-block;
-			width: 100%;
-			&:hover {
-				text-decoration: none;
-			}
-		 }
+		font-size: 22px;
+		.relmed;
+		line-height: 37px;
+		color: @white;
 	}
 }
 #about {
@@ -575,6 +568,20 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.modal {
+	&-body {
+		input {
+			width: 100%;
+			border: 1px solid @bordercolor;
+			margin-bottom: 20px;
+			line-height: 35px;
+			.relmed;
+			outline: none;
+			resize: none;
+			padding-left: 10px;
+		}
+	}
+}
 
 @media (max-width: 1199px) {
 	.foto {
